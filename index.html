@@ -6,6 +6,196 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Khám phá keycap, switch và bàn phím cơ tại Keycap Universe.">
   <title>Keycap Universe | Your Keyboard, Your Universe</title>
+  
+<style>
+  :root {
+    --bg: #080b18;
+    --panel: #12172b;
+    --purple: #9b87ff;
+    --blue: #79e7ff;
+    --white: #f4f2ff;
+    --muted: #a9b2d0;
+    --border: rgba(185, 175, 255, 0.2);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(ellipse at 80% 10%, #292052 0, transparent 35%),
+      radial-gradient(ellipse at 10% 50%, #101d3a 0, transparent 40%),
+      var(--bg);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 8%;
+    border-bottom: 1px solid var(--border);
+    background: rgba(8, 11, 24, 0.85);
+  }
+
+  header p {
+    color: var(--blue);
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  a {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  nav a:hover,
+  a:hover {
+    color: var(--blue);
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 24px 70px;
+  }
+
+  #home {
+    padding: 90px 0;
+    max-width: 750px;
+  }
+
+  #home > p:first-child {
+    color: var(--blue);
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: clamp(38px, 7vw, 72px);
+    line-height: 1.1;
+    margin: 18px 0;
+    background: linear-gradient(90deg, #fff, var(--purple), var(--blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    color: var(--blue);
+    letter-spacing: 1px;
+  }
+
+  #home a,
+  #contact a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 11px 18px;
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    background: rgba(155, 135, 255, 0.12);
+  }
+
+  #products > div {
+    margin: 22px 0;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: linear-gradient(
+      135deg,
+      rgba(30, 36, 68, 0.85),
+      rgba(18, 23, 43, 0.85)
+    );
+    transition: transform 0.2s, border-color 0.2s;
+  }
+
+  #products > div:hover {
+    transform: translateY(-3px);
+    border-color: var(--purple);
+  }
+
+  article {
+    padding: 12px 16px;
+    border-left: 2px solid var(--purple);
+    background: rgba(8, 11, 24, 0.5);
+    border-radius: 0 10px 10px 0;
+  }
+
+  article h4 {
+    margin-bottom: 4px;
+    font-size: 19px;
+  }
+
+  article p {
+    color: var(--muted);
+    margin: 5px 0;
+  }
+
+  #contact {
+    margin-top: 55px;
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: radial-gradient(
+      circle at top right,
+      rgba(155, 135, 255, 0.18),
+      transparent 65%
+    );
+  }
+
+  footer {
+    padding: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    text-align: center;
+    font-size: 13px;
+  }
+
+  @media (max-width: 650px) {
+    header {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 14px 6%;
+    }
+
+    nav {
+      gap: 10px 16px;
+    }
+
+    main {
+      padding: 15px 18px 45px;
+    }
+
+    #home {
+      padding: 55px 0;
+    }
+
+    #contact {
+      padding: 20px;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header>
