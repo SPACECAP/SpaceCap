@@ -4,315 +4,361 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khám phá keycap, switch và bàn phím cơ tại Keycap Universe.">
-  <title> SPACECAP | A SPACE TO BE YOU</title>
-  
-<style>
-  :root {
-    --bg: #080b18;
-    --panel: #12172b;
-    --purple: #9b87ff;
-    --blue: #79e7ff;
-    --white: #f4f2ff;
-    --muted: #a9b2d0;
-    --border: rgba(185, 175, 255, 0.2);
-  }
+  <meta name="description" content="SPACECAP — khám phá keycap, switch và bàn phím cơ cho góc máy mang dấu ấn riêng của bạn.">
+  <meta name="theme-color" content="#10091F">
+  <title>SPACECAP | A SPACE TO BE YOU</title>
 
-  * {
-    box-sizing: border-box;
-  }
+  <style>
+    :root {
+      --bg: #10091F;
+      --surface: #1B1233;
+      --purple: #8B5CF6;
+      --cyan: #65D9FF;
+      --text: #F2F0FF;
+      --muted: #B9B2D0;
+      --border: #35264E;
+    }
 
-  html {
-    scroll-behavior: smooth;
-  }
+    * {
+      box-sizing: border-box;
+    }
 
-  body {
-    margin: 0;
-    background:
-      radial-gradient(ellipse at 80% 10%, #292052 0, transparent 35%),
-      radial-gradient(ellipse at 10% 50%, #101d3a 0, transparent 40%),
-      var(--bg);
-    color: var(--white);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.7;
-  }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px 8%;
-    border-bottom: 1px solid var(--border);
-    background: rgba(8, 11, 24, 0.85);
-  }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 80% 10%, rgba(80, 48, 145, 0.28), transparent 38%),
+        radial-gradient(ellipse at 10% 48%, rgba(29, 74, 125, 0.20), transparent 42%),
+        var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
 
-  header p {
-    color: var(--blue);
-    font-weight: 800;
-    letter-spacing: 2px;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-  }
-
-  a {
-    color: var(--white);
-    text-decoration: none;
-  }
-
-  nav a:hover,
-  a:hover {
-    color: var(--blue);
-  }
-
-  main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 30px 24px 70px;
-  }
-
-  #home {
-    padding: 90px 0;
-    max-width: 750px;
-  }
-
-  #home > p:first-child {
-    color: var(--blue);
-    letter-spacing: 4px;
-    font-size: 12px;
-    font-weight: bold;
-  }
-
-  h1 {
-    font-size: clamp(38px, 7vw, 72px);
-    line-height: 1.1;
-    margin: 18px 0;
-    background: linear-gradient(90deg, #fff, var(--purple), var(--blue));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  h3 {
-    color: var(--blue);
-    letter-spacing: 1px;
-  }
-
-  #home a,
-  #contact a {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 11px 18px;
-    border: 1px solid var(--purple);
-    border-radius: 10px;
-    background: rgba(155, 135, 255, 0.12);
-  }
-
-  #products > div {
-    margin: 22px 0;
-    padding: 20px;
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    background: linear-gradient(
-      135deg,
-      rgba(30, 36, 68, 0.85),
-      rgba(18, 23, 43, 0.85)
-    );
-    transition: transform 0.2s, border-color 0.2s;
-  }
-
-  #products > div:hover {
-    transform: translateY(-3px);
-    border-color: var(--purple);
-  }
-
-  article {
-    padding: 12px 16px;
-    border-left: 2px solid var(--purple);
-    background: rgba(8, 11, 24, 0.5);
-    border-radius: 0 10px 10px 0;
-  }
-
-  article h4 {
-    margin-bottom: 4px;
-    font-size: 19px;
-  }
-
-  article p {
-    color: var(--muted);
-    margin: 5px 0;
-  }
-
-  #contact {
-    margin-top: 55px;
-    padding: 28px;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    background: radial-gradient(
-      circle at top right,
-      rgba(155, 135, 255, 0.18),
-      transparent 65%
-    );
-  }
-
-  footer {
-    padding: 24px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    text-align: center;
-    font-size: 13px;
-  }
-
-  @media (max-width: 650px) {
     header {
-      align-items: flex-start;
-      flex-direction: column;
-      padding: 14px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 8%;
+      border-bottom: 1px solid rgba(185, 175, 255, 0.2);
+      background: rgba(16, 9, 31, 0.94);
+    }
+
+    .brand {
+      margin: 0;
+      color: var(--cyan);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      white-space: nowrap;
     }
 
     nav {
-      gap: 10px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover,
+    a:hover {
+      color: var(--cyan);
     }
 
     main {
-      padding: 15px 18px 45px;
+      width: min(1100px, 100%);
+      margin: 0 auto;
+      padding: 30px 24px 70px;
     }
 
     #home {
-      padding: 55px 0;
+      padding: 38px 0 72px;
+    }
+
+    .hero-cover {
+      display: block;
+      width: 100%;
+      max-height: 440px;
+      aspect-ratio: 16 / 7;
+      object-fit: cover;
+      object-position: center;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      margin: 0 0 30px;
+      background: var(--surface);
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.1;
+      margin: 16px 0;
+      background: linear-gradient(90deg, #fff, var(--purple), var(--cyan));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    h2 {
+      font-size: clamp(26px, 4vw, 34px);
+      line-height: 1.2;
+      margin-top: 0;
+    }
+
+    h3 {
+      color: var(--cyan);
+      letter-spacing: 1px;
+      margin-top: 0;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .intro {
+      max-width: 680px;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 11px 18px;
+      border: 1px solid var(--purple);
+      border-radius: 10px;
+      background: rgba(139, 92, 246, 0.18);
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    #products {
+      padding-top: 18px;
+    }
+
+    .section-intro {
+      margin-top: -8px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .product-card {
+      min-width: 0;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(30, 36, 68, 0.88), rgba(27, 18, 51, 0.92));
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--purple);
+    }
+
+    .product-number {
+      color: var(--purple);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .product-card h3 {
+      margin: 8px 0;
+    }
+
+    .product-name {
+      color: var(--text);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .product-price {
+      color: var(--cyan);
+      font-size: 14px;
+      margin-bottom: 0;
     }
 
     #contact {
-      padding: 20px;
+      margin-top: 60px;
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.18), transparent 65%);
     }
-  }
-</style>
 
-  :root {
-  --space-bg: #10091F;
-  --space-surface: #1B1233;
-  --space-purple: #8B5CF6;
-  --space-cyan: #65D9FF;
-  --space-text: #F2F0FF;
-  --space-muted: #B9B2D0;
-}
+    #contact h2 {
+      margin-bottom: 8px;
+    }
 
-body {
-  background-color: var(--space-bg);
-  color: var(--space-text);
-}
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-header, nav, footer {
-  background-color: var(--space-bg);
-  color: var(--space-text);
-}
+    footer {
+      padding: 24px;
+      border-top: 1px solid rgba(185, 175, 255, 0.2);
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
 
-a {
-  color: var(--space-cyan);
-}
+    footer p {
+      margin: 4px 0;
+    }
 
-button, .button, .btn {
-  background-color: var(--space-purple);
-  color: #FFFFFF;
-  border: 1px solid var(--space-purple);
-  border-radius: 10px;
-}
+    @media (max-width: 760px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 6%;
+      }
 
-button:hover, .button:hover, .btn:hover {
-  background-color: #7542DB;
-}
+      nav {
+        gap: 8px 16px;
+      }
 
-.card, .product-card {
-  background-color: var(--space-surface);
-  color: var(--space-text);
-  border: 1px solid #35264E;
-  border-radius: 14px;
-}
+      main {
+        padding: 22px 18px 48px;
+      }
 
-.tagline {
-  color: var(--space-cyan);
-}
+      #home {
+        padding: 22px 0 48px;
+      }
 
-p, .description {
-  color: var(--space-muted);
-}
+      .hero-cover {
+        aspect-ratio: 4 / 3;
+        max-height: 360px;
+        border-radius: 14px;
+        margin-bottom: 24px;
+      }
 
-  
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
 
+      #contact {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <p>✦ SPACECAP</p>
-    <nav>
+    <p class="brand">✦ SPACECAP</p>
+
+    <nav aria-label="Điều hướng chính">
       <a href="#home">Trang chủ</a>
       <a href="#keycap">Keycap</a>
       <a href="#switch">Switch</a>
       <a href="#keyboard">Bàn phím</a>
+      <a href="#contact">Liên hệ</a>
     </nav>
   </header>
 
   <main>
     <section id="home">
-      <p>A SPACE TO BE YOU</p>
+      <!-- Đặt ảnh bìa tại images/ảnh bìa.png -->
+      <img
+        src="images/ảnh%20bìa.png"
+        alt="Bộ sưu tập bàn phím mang phong cách vũ trụ của SPACECAP"
+        class="hero-cover"
+      >
+
+      <p class="eyebrow">A SPACE TO BE YOU.</p>
+
       <h1>Tìm thế giới của riêng bạn.</h1>
-      <p>
-        Khám phá keycap độc đáo, switch chất lượng
-        và bàn phím cơ dành cho góc máy của bạn.
+
+      <p class="intro">
+        A space to reconnect with yourself.
+        Khám phá keycap độc đáo, switch chất lượng và bàn phím cơ
+        dành cho góc máy mang dấu ấn riêng của bạn.
       </p>
-      <a href="#products">Khám phá sản phẩm ↓</a>
+
+      <a class="button" href="#products">Khám phá sản phẩm ↓</a>
     </section>
 
     <section id="products">
       <h2>Khám phá bộ sưu tập</h2>
-      <p>Chọn món đồ phù hợp với phong cách của bạn.</p>
+      <p class="section-intro">
+        Chọn món đồ phù hợp với phong cách của bạn.
+      </p>
 
-      <div id="keycap">
-        <h3>01 — Keycap</h3>
-        <article>
-          <h4>OSA One Piece</h4>
+      <div class="product-grid">
+        <article class="product-card" id="keycap">
+          <span class="product-number">01 — KEYCAP</span>
+          <h3>Keycap</h3>
+          <p class="product-name">OSA One Piece</p>
           <p>Keycap chủ đề anime.</p>
-          <p>Giá: Chưa cập nhật</p>
+          <p class="product-price">Giá: Chưa cập nhật</p>
         </article>
-      </div>
 
-      <div id="switch">
-        <h3>02 — Switch</h3>
-        <article>
-          <h4>Switch mẫu 01</h4>
+        <article class="product-card" id="switch">
+          <span class="product-number">02 — SWITCH</span>
+          <h3>Switch</h3>
+          <p class="product-name">Switch mẫu 01</p>
           <p>Bổ sung loại switch và thông số sau.</p>
-          <p>Giá: Chưa cập nhật</p>
+          <p class="product-price">Giá: Chưa cập nhật</p>
         </article>
-      </div>
 
-      <div id="keyboard">
-        <h3>03 — Bàn phím</h3>
-        <article>
-          <h4>Bàn phím mẫu 01</h4>
+        <article class="product-card" id="keyboard">
+          <span class="product-number">03 — KEYBOARD</span>
+          <h3>Bàn phím</h3>
+          <p class="product-name">Bàn phím mẫu 01</p>
           <p>Bổ sung mẫu bàn phím và thông số sau.</p>
-          <p>Giá: Chưa cập nhật</p>
+          <p class="product-price">Giá: Chưa cập nhật</p>
         </article>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Đặt hàng & tư vấn</h2>
+      <h2>Đặt hàng &amp; tư vấn</h2>
       <p>Liên hệ để được tư vấn về sản phẩm.</p>
-      <a href="https://m.me/" target="_blank" rel="noopener noreferrer">
-        Nhắn tin Messenger
-      </a>
-      <p>
-        <a href="https://zalo.me/" target="_blank" rel="noopener noreferrer">
-          Liên hệ Zalo
-        </a>
-      </p>
+
+      <div class="contact-links">
+        <!-- Thay bằng liên kết Messenger và Zalo thật của shop -->
+        <a
+          class="button"
+          href="https://m.me/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Nhắn tin Messenger</a>
+
+        <a
+          class="button"
+          href="https://zalo.me/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Liên hệ Zalo</a>
+      </div>
     </section>
   </main>
 
