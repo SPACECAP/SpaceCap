@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá keycap, switch và bàn phím cơ tại Keycap Universe.">
+  <title>Keycap Universe | Your Keyboard, Your Universe</title>
+</head>
+<body>
+  <header>
+    <p>✦ KEYCAP UNIVERSE</p>
+    <nav>
+      <a href="#home">Trang chủ</a>
+      <a href="#keycap">Keycap</a>
+      <a href="#switch">Switch</a>
+      <a href="#keyboard">Bàn phím</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <p>YOUR KEYBOARD, YOUR UNIVERSE</p>
+      <h1>Tìm thế giới của riêng bạn.</h1>
+      <p>
+        Khám phá keycap độc đáo, switch chất lượng
+        và bàn phím cơ dành cho góc máy của bạn.
+      </p>
+      <a href="#products">Khám phá sản phẩm ↓</a>
+    </section>
+
+    <section id="products">
+      <h2>Khám phá bộ sưu tập</h2>
+      <p>Chọn món đồ phù hợp với phong cách của bạn.</p>
+
+      <div id="keycap">
+        <h3>01 — Keycap</h3>
+        <article>
+          <h4>OSA One Piece</h4>
+          <p>Keycap chủ đề anime.</p>
+          <p>Giá: Chưa cập nhật</p>
+        </article>
+      </div>
+
+      <div id="switch">
+        <h3>02 — Switch</h3>
+        <article>
+          <h4>Switch mẫu 01</h4>
+          <p>Bổ sung loại switch và thông số sau.</p>
+          <p>Giá: Chưa cập nhật</p>
+        </article>
+      </div>
+
+      <div id="keyboard">
+        <h3>03 — Bàn phím</h3>
+        <article>
+          <h4>Bàn phím mẫu 01</h4>
+          <p>Bổ sung mẫu bàn phím và thông số sau.</p>
+          <p>Giá: Chưa cập nhật</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Đặt hàng & tư vấn</h2>
+      <p>Liên hệ để được tư vấn về sản phẩm.</p>
+      <a href="https://m.me/" target="_blank" rel="noopener noreferrer">
+        Nhắn tin Messenger
+      </a>
+      <p>
+        <a href="https://zalo.me/" target="_blank" rel="noopener noreferrer">
+          Liên hệ Zalo
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Keycap Universe</p>
+    <p>Your keyboard, your universe.</p>
+  </footer>
+</body>
+</html>
