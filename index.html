@@ -9,6 +9,51 @@
   <title>SPACECAP | A SPACE TO BE YOU</title>
 
   <style>
+    
+/* Keycap categories */
+.keycap-category {
+  padding: 32px 0 48px;
+}
+
+.category-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #8B5CF6;
+  border-radius: 20px;
+  color: #C9B5FF;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.category-description {
+  color: #B9B2D0;
+  margin: 8px 0 24px;
+}
+
+.order-policy {
+  padding: 16px 18px;
+  margin-bottom: 24px;
+  border: 1px solid #49366C;
+  border-radius: 12px;
+  background: rgba(139, 92, 246, 0.10);
+}
+
+.order-policy p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.order-policy strong {
+  color: #65D9FF;
+}
+
+.category-divider {
+  border: 0;
+  border-top: 1px solid #35264E;
+  margin: 10px 0;
+}
+
     :root {
       --bg: #10091F;
       --surface: #1B1233;
@@ -305,20 +350,78 @@
       <a class="button" href="#products">Khám phá sản phẩm ↓</a>
     </section>
 
-    <section id="products">
-      <h2>Khám phá bộ sưu tập</h2>
-      <p class="section-intro">
-        Chọn món đồ phù hợp với phong cách của bạn.
-      </p>
+   
+<!-- KEYCAP CÓ SẴN -->
+<section id="keycap-available" class="keycap-category">
+  <span class="category-label">AVAILABLE NOW</span>
+  <h2>Keycap có sẵn</h2>
+  <p class="category-description">
+    Sản phẩm đang có tại shop, sẵn sàng để đặt mua.
+  </p>
 
-      <div class="product-grid">
-        <article class="product-card" id="keycap">
-          <span class="product-number">01 — KEYCAP</span>
-          <h3>Keycap</h3>
-          <p class="product-name">OSA One Piece</p>
-          <p>Keycap chủ đề anime.</p>
-          <p class="product-price">Giá: Chưa cập nhật</p>
-        </article>
+  <div class="keycap-gallery">
+
+    <article class="keycap-item">
+      <div class="keycap-image-wrap">
+        <img
+          class="keycap-image"
+          src="images/keycap-ws-blue.jpg"
+          alt="Bộ keycap màu xanh"
+          loading="lazy"
+        >
+      </div>
+      <div class="keycap-info">
+        <h3>Tên bộ keycap</h3>
+        <p>Màu sắc: Cập nhật sau</p>
+        <p class="keycap-price">Giá: Cập nhật sau</p>
+        <a class="keycap-order" href="#contact">Liên hệ đặt mua</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<hr class="category-divider">
+
+<!-- KEYCAP ORDER -->
+<section id="keycap-order" class="keycap-category">
+  <span class="category-label">PRE-ORDER</span>
+  <h2>Keycap order</h2>
+  <p class="category-description">
+    Đặt trước bộ keycap bạn yêu thích.
+  </p>
+
+  <div class="order-policy">
+    <p><strong>Đặt cọc:</strong> 50% giá trị đơn hàng.</p>
+    <p><strong>Thời gian dự kiến:</strong> 7–14 ngày để hàng về.</p>
+    <p>
+      Thời gian trên là dự kiến và có thể thay đổi tùy tình hình vận chuyển.
+    </p>
+  </div>
+
+  <div class="keycap-gallery">
+
+    <article class="keycap-item">
+      <div class="keycap-image-wrap">
+        <img
+          class="keycap-image"
+          src="images/keycap-order-01.jpg"
+          alt="Bộ keycap nhận đặt trước"
+          loading="lazy"
+        >
+      </div>
+      <div class="keycap-info">
+        <h3>Tên bộ keycap</h3>
+        <p>Màu sắc: Cập nhật sau</p>
+        <p class="keycap-price">Giá: Cập nhật sau</p>
+        <a class="keycap-order" href="#contact">Liên hệ order</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+        
 
         <article class="product-card" id="switch">
           <span class="product-number">02 — SWITCH</span>
